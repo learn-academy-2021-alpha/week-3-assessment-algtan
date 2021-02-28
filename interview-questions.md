@@ -98,9 +98,9 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 
 ## Looking Ahead: Terms for Next Week
-- Ruby
-- Object oriented programming
-- RSpec
-- Instance variable
-- Ruby blocks
-- Ruby hashes
+- Ruby -  an object-oriented programming (OOP) language that is interpreted (versus compiled), and is dynamically typed (data types do not need to be declared).
+- Object oriented programming - a way of programming in which objects serve as the basis for the code. Objects can be thought of as containers for data and methods, and these containers can be changed without affecting the rest of the code.
+- RSpec - framework used for testing code written in the programming language Ruby
+- Instance variable - In Ruby, an instance variable is distinguished with the '@' symbol placed at the beginning. The instance variable is locally scoped to the object (instance of a class), meaning it is only accessible within that object.
+- Ruby blocks - blocks are anonymous functions (functions without names) that are passed to a method.
+- Ruby hashes - Ruby hashes are similar to objects in JavaScript, in which information is stored in key-value pairs.
