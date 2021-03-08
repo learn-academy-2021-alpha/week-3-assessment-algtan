@@ -6,6 +6,11 @@
 
 <!-- HINT: Check the console in the browser developer tools for errors. The lines numbers may not match up with the line numbers in your text editor. -->
 
+<!-- Bug List -->
+<!-- 1. Line 84 - missing a function for the onClick - this.props.drawCard -->
+<!-- 2. Line 87 - missing 'this.props' for the shuffle function -->
+<!-- 3. Line 61 - props were not originally being passed for this.state.hand -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -53,6 +58,7 @@
               <Card
                 drawCard={ this.drawCard }
                 shuffle={ this.shuffle }
+                hand={ this.state.hand }
               />
             </>
           )
@@ -75,10 +81,10 @@
           }
           return(
             <>
-              <button onClick={}>
+              <button onClick={ this.props.drawCard }>
                 Click to Draw a Card
               </button>
-              <button onClick={ shuffle }>
+              <button onClick={ this.props.shuffle }>
                 Return Cards and Shuffle Deck
               </button>
               <div style={ handStyles }>
